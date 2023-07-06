@@ -1,0 +1,40 @@
+.body{
+    width: 500px;
+    height: 500px;
+    background-color: antiquewhite;
+}
+body{
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+}
+#you{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 460px;
+   
+
+
+}
+.jump{
+    animation: jump 0.4s linear;
+}
+@keyframes jump {
+    0%{
+        top: 462px;
+    }
+    25%{
+        top:440px;
+    }
+    50%{
+        top:420px;
+    }
+    75%{
+        top:440px;
+    }
+    100%{
+        top:460px;
+    }
+}
