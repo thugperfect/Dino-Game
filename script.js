@@ -5,7 +5,7 @@ function jump(){
         you.classList.add("jump")
         setTimeout(()=>{
             you.classList.remove("jump")
-        },400)
+        },500)
     }
   
 }

@@ -9,7 +9,7 @@ body{
     justify-content: center;
 }
 #you{
-    background-color: black;
+    background-color: rgb(246, 2, 2);
     width: 30px;
     height: 30px;
     position: relative;
@@ -18,23 +18,43 @@ body{
 
 
 }
+#obj{
+    background-color: black;
+    width: 10px;
+    height: 30px;
+    position: relative;
+    top: 430px;
+    left: 480px;
+    animation: obj 3s linear infinite ;
+}
 .jump{
-    animation: jump 0.4s linear;
+    animation: jump 0.5s linear;
 }
 @keyframes jump {
     0%{
-        top: 462px;
+        top: 460px;
     }
     25%{
-        top:440px;
+        top:430px;
     }
     50%{
-        top:420px;
+        top:400px;
     }
     75%{
-        top:440px;
+        top:430px;
     }
     100%{
         top:460px;
     }
+}
+
+@keyframes obj {
+    0%{
+        left: 480px;
+    }
+  
+    100%{
+        left: 0px;
+    }
+    
 }
