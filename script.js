@@ -12,11 +12,29 @@ function jump(){
         let youTop = parseInt(window.getComputedStyle(you).getPropertyValue("top"))
         let objEnd = parseInt(window.getComputedStyle(obj).getPropertyValue("left"))
         if(objEnd < 30 && objEnd >0 && youTop>430){
-            window.alert("game over!")
+           
         }
     },10)
   
 }
-document.addEventListener("keypress",(event)=>{
-    jump()
-})
+
+
+
+function game(f){
+    let btn = document.getElementById("start")
+    let body = document.getElementById("mbody")
+    btn.addEventListener("click",()=>{
+        if(f === 0){
+            btn.innerHTML="||"
+            document.addEventListener("keypress",(event)=>{
+                jump()
+            })
+            body.setAttribute("onclick","game(1)")
+
+        }
+        else{
+            btn.innerHTML= ">"
+            body.setAttribute("onclick","game(0)")
+        }
+    })
+}
